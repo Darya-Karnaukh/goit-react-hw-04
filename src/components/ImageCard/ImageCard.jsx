@@ -1,7 +1,11 @@
 const ImageCard = ({ image, onClick }) => {
   return (
-    <div onClick={() => onClick(image)}>
-      <img src={image.urls.small} alt={image.description} />
+    <div>
+      <img
+        onClick={() => onClick(image)}
+        src={image.urls.small}
+        alt={image.description}
+      />
     </div>
   );
 };
